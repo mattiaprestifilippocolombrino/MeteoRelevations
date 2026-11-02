@@ -1,0 +1,4 @@
+Comandi docker per creare un immagine ed eseguirla in un container:
+docker build -t meteo-app .
+(docker rm -f meteo-container)
+docker run --name meteo-container -p 8080:8080 meteo-app

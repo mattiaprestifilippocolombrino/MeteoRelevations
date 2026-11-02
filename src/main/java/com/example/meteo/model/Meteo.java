@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import jakarta.persistence.*;
 
 /*
-Classe model che si occupa di modellare gli attributi di una rilevazioni (utili alla logica del nostro applicativo)
+Classe model che si occupa di modellare gli attributi di una rilevazione (utili alla logica del nostro applicativo)
 in una tabella del DB.
  */
 

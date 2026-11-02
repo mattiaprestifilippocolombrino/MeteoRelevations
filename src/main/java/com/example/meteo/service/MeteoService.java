@@ -19,7 +19,9 @@ public class MeteoService {
     private final RestClient restClient;
 
     /*
-    Mapping costante che associa ad ogni nome di citta le relative coordinate.
+    Mapping costante che associa ad ogni nome di citta le relative coordinate. Viene utilizzato per semplificare la demo
+    di uso per 5 citta italiane. In un caso di produzione, passare al controller direttamente le coordinate, supportando qualsiasi citta,
+    oppure utilizzare un servizio API che dato il nome di città restituisca le sue coordinate.
      */
     private static final Map<String, double[]> CITTA = Map.of(
             "pisa", new double[]{43.7228, 10.4017},
@@ -176,4 +178,6 @@ public class MeteoService {
         }
         return medie;
     }
+
+
 }
